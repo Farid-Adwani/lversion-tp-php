@@ -12,7 +12,7 @@ if ($email!="" && $password!="") {
         $_SESSION['connect']=$req[0]->id;
         $_SESSION['nomadmin']=$req[0]->nom;
         $_SESSION['prénomadmin']=$req[0]->prenom;
-        $_SESSION['connected']="Bienvennue dans votre compte administrateur <°°> "; 
+        $_SESSION['connected']="Bienvenue dans votre compte administrateur <°°> ";
         header('location:home.php');
     } else {
         $_SESSION['errorMessage']="Compte introuvable Veuillez vérifier vos credenitals";
